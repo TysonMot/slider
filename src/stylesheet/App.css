@@ -37,6 +37,7 @@ p {
   box-shadow: 0 0 5px grey;
   height: fit-content;
   border-radius: 5px;
+  border-bottom:7px solid goldenrod;
 }
 
 .slick-current {
@@ -67,7 +68,7 @@ p {
 }
 
 .arrow svg:hover {
-  color: #68edff;
+  color: goldenrod;
 }
 
 .next {
