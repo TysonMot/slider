@@ -3,6 +3,7 @@ import { useState } from "react";
 import Slider from "react-slick";
 import dog from "./../assets/pic.jpg";
 import pic2 from './../assets/pic2.jpeg';
+import './../stylesheet/responsive.css';
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
@@ -66,17 +67,20 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className={'slide-container'}>
       <Slider {...settings}>
+       
         {images.map((img, idx) => (
           <div className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-           <div className={'image-container'}>
-             <img src={img} alt={img} />
+           <div className={idx === imageIndex ? 'items-cover':'inactiveSliders'}>
+             <div className={'image-container'}>
+               <img src={img} alt={img} />
+             </div>
+             <div className={'content'}>
+               <h1>Get a device</h1>
+               <p>start here</p>
+             </div>
            </div>
-            <div className={'content'}>
-              <h1>Get a device</h1>
-              <p>start here</p>
-            </div>
           </div>
         ))}
       </Slider>
