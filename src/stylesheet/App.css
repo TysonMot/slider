@@ -13,7 +13,7 @@ p {
 }
 
 .items-cover {
-  width: 270px;
+  width: 83%;
   height: 250px;
   margin: 0 0.5rem;
   text-align: center;
@@ -45,7 +45,7 @@ p {
 
 .inactiveSliders {
   transform: scale(0.99);
-  width: 270px;
+  width: 80%;
   height: 250px;
   margin: 0 0.5rem;
   text-align: center;
