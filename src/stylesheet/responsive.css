@@ -35,9 +35,9 @@
 
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     .items-cover {
-        width:70%;
+        width:80% !important;
         margin: auto;
-        height: 250px;
+        height: 280px;
     }
     .slide {
         padding: 0;
